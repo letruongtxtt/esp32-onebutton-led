@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Đặt bài toán 
 
 - Phần cứng: Chỉ có một nút bấm nhả (push button) và một đèn LED hiển thị tích hợp sẵn trên các dev board điển hình
@@ -24,3 +25,7 @@ Project này cũng minh họa điểm mạnh của PIO là có thể dùng chung
     + Nhấn giữ >2s (hold) thì LED sẽ chuyển sang trạng thái nhấp nháy liên tục (blink 200ms một lần).
     + Đã thêm hàm sử dụng double click để nháy LED trong thư viện OneButton (blink 200ms một lần).
     + Nếu tiếp tục nhấn single click thì LED lại chuyển trạng thái bật/tắt.
+=======
+# esp32-onebutton-led
+ESP32 LED control using OneButton (Single click ON/OFF, Double click blink,etc)
+>>>>>>> 3f20a65ce12c145391996ea17021d3171a4d7a46
