@@ -2,8 +2,7 @@
 #include "LED.h"
 #include <OneButton.h>
 
-LED led(LED_PIN, LED_ACT);
-
+LED led1(LED_PIN, LED_ACT);
 void btnPush();
 void btnHold();
 void btnDoubleclick();
@@ -11,7 +10,7 @@ OneButton button(BTN_PIN, !BTN_ACT);
 
 void setup()
 {
-    led.off();
+    led1.off();
     button.attachClick(btnPush);
     button.attachLongPressStart(btnHold);
     button.attachDoubleClick(btnDoubleclick);
@@ -19,21 +18,21 @@ void setup()
 
 void loop()
 {
-    led.loop();
+    led1.loop();
     button.tick();
 }
 
 void btnPush()
 {
-    led.flip();
+    led1.flip();
 }
 
 void btnHold()
 {
-    led.blink(200);
+    led1.blink(200);
 }
 
 void btnDoubleclick()
 {
-    led.blink(200);
+    led1.blink(200);
 }
